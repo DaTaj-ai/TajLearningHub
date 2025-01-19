@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.TextFlow?>
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="About">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextFlow prefHeight="45.0" prefWidth="602.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="103.0" text="      ID       " />
+            <TextField fx:id="idTextField" prefHeight="31.0" prefWidth="406.0" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="45.0" prefWidth="602.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="101.0" text="  First Name  " />
+            <TextField fx:id="firstNameTextField" prefHeight="31.0" prefWidth="412.0" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="45.0" prefWidth="602.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="101.0" text="  Midel Name " />
+            <TextField fx:id="midelNameTextField" prefHeight="31.0" prefWidth="414.0" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="45.0" prefWidth="602.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="102.0" text="  Last Name    " />
+            <TextField fx:id="lastNameTextField" prefHeight="31.0" prefWidth="412.0" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="45.0" prefWidth="602.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="104.0" text="  Email  " />
+            <TextField fx:id="emailTextField" prefHeight="31.0" prefWidth="415.0" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="45.0" prefWidth="602.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="108.0" text="  phone " />
+            <TextField fx:id="phoneTextField" prefHeight="31.0" prefWidth="412.0" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="52.0" prefWidth="529.0">
+         <children>
+          <Button fx:id="newSaveButton" mnemonicParsing="false" prefHeight="31.0" prefWidth="68.0" text="New" />
+            <Button fx:id="updateSaveButton" mnemonicParsing="false" text="Update" />
+            <Button fx:id="deleteButton" mnemonicParsing="false" text="Delete" />
+            <Button fx:id="firstButton" mnemonicParsing="false" text="First" />
+            <Button fx:id="previousButton" mnemonicParsing="false" text="Previous" />
+            <Button fx:id="nextButton" mnemonicParsing="false" text="Next" />
+            <Button fx:id="lastButton" mnemonicParsing="false" text="Last" />
+            <TextField fx:id="outPuttextField" />
+         </children>
+      </TextFlow>
+   </children>
+</FlowPane>

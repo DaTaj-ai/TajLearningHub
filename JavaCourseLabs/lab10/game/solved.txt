@@ -1,0 +1,75 @@
+import java.applet.Applet ; 
+import java.awt.Graphics ;
+import java.util.Date ; 
+
+public class DigtalWatch extends Applet implements Runnable{
+	
+		
+	
+	Thread th ;
+	int x ; 
+	int y = 30 ; 
+	int x2 ; 
+	int y2 ; 
+	boolean xFlag = true ;
+	boolean yFlag = true ; 
+	 
+	public void init(){
+		DigtalWatch d = this ;  
+		th = new Thread(this);
+		th.start();	
+				 
+	}
+			
+	public void paint(Graphics g){
+		
+		g.drawOval(x , y , 50 , 50);
+		g.fillOval(x , y , 50 , 50);	
+		
+			if(xFlag){
+				x+=10; 				
+				if(x > getWidth()-50){
+					xFlag = false ; 		
+					}
+				}
+			else{
+				x -=10 ; 				
+				if(x < 0){
+					xFlag = true ; 		
+				} 
+			}
+			
+			if(yFlag){
+				y+=10; 
+				if(y > getHeight()-50){
+					yFlag = false ; 		
+					}
+				}
+			else{
+				y-=10 ;
+
+				  				
+				if(y < 0){
+					yFlag = true ; 		
+				} 
+			}
+
+			
+		
+		}
+	public void run (){
+		while(true){
+			try{
+				Thread.sleep(10);
+				repaint();
+				 
+			
+			}
+			catch(InterruptedException e){
+				System.out.println("this is from Expetion");
+			}
+			
+			}
+		}
+
+}
