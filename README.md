@@ -8,3 +8,4 @@ This repository contains learning courses and labs that I have worked on. It inc
 3. [Web Development Course](link_to_course_repo) - Build dynamic websites and web applications.
 
 Each course includes labs and exercises to practice and reinforce concepts learned in the lectures.
+![Image](https://github.com/user-attachments/assets/55f672a2-0ba4-4e9c-9ba4-3dd68ad49188)
