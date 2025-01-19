@@ -8,11 +8,3 @@ This repository contains learning courses and labs that I have worked on. It inc
 3. [Web Development Course](link_to_course_repo) - Build dynamic websites and web applications.
 
 Each course includes labs and exercises to practice and reinforce concepts learned in the lectures.
-
-## How to Contribute
-
-Feel free to fork the repository and contribute by creating pull requests for any labs or exercises you'd like to share. All contributions are welcome!
-
-## License
-
-This repository is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
